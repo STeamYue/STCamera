@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "STCameraC.h"
+#import <Masonry.h>
 @interface ViewController ()
 
 @end
@@ -17,7 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    STCameraC *stCameraC= [[STCameraC alloc]init];
+    [self addChildViewController:stCameraC];
+    [self.view addSubview:stCameraC.view];
+    [stCameraC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
+
 
 
 - (void)didReceiveMemoryWarning {

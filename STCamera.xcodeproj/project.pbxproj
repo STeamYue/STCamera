@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212020FEEEF2667E3C3670B2 /* libPods-STCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1F20079D4716B523F27CA8 /* libPods-STCamera.a */; };
 		9E4889541F1610B600677A29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4889531F1610B600677A29 /* main.m */; };
 		9E4889571F1610B600677A29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4889561F1610B600677A29 /* AppDelegate.m */; };
 		9E48895A1F1610B600677A29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4889591F1610B600677A29 /* ViewController.m */; };
@@ -15,6 +16,10 @@
 		9E4889621F1610B600677A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4889601F1610B600677A29 /* LaunchScreen.storyboard */; };
 		9E48896D1F1610B600677A29 /* STCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E48896C1F1610B600677A29 /* STCameraTests.m */; };
 		9E4889781F1610B600677A29 /* STCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4889771F1610B600677A29 /* STCameraUITests.m */; };
+		9EC06F801F1623F100273193 /* STCameraC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC06F7F1F1623F100273193 /* STCameraC.m */; };
+		9EC06F841F16242C00273193 /* STCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC06F831F16242C00273193 /* STCameraView.m */; };
+		9EC06F871F1624A000273193 /* STCameraProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC06F861F1624A000273193 /* STCameraProtocol.m */; };
+		9EC06F8B1F162DCA00273193 /* STGPUImgFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC06F8A1F162DCA00273193 /* STGPUImgFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E1F20079D4716B523F27CA8 /* libPods-STCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4841D3CDD7B7D18CD804B5E7 /* Pods-STCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-STCamera/Pods-STCamera.release.xcconfig"; sourceTree = "<group>"; };
 		9E48894F1F1610B600677A29 /* STCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4889531F1610B600677A29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E4889551F1610B600677A29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +58,15 @@
 		9E4889731F1610B600677A29 /* STCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4889771F1610B600677A29 /* STCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STCameraUITests.m; sourceTree = "<group>"; };
 		9E4889791F1610B600677A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC06F7E1F1623F100273193 /* STCameraC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCameraC.h; sourceTree = "<group>"; };
+		9EC06F7F1F1623F100273193 /* STCameraC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCameraC.m; sourceTree = "<group>"; };
+		9EC06F821F16242C00273193 /* STCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCameraView.h; sourceTree = "<group>"; };
+		9EC06F831F16242C00273193 /* STCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCameraView.m; sourceTree = "<group>"; };
+		9EC06F851F1624A000273193 /* STCameraProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCameraProtocol.h; sourceTree = "<group>"; };
+		9EC06F861F1624A000273193 /* STCameraProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCameraProtocol.m; sourceTree = "<group>"; };
+		9EC06F891F162DCA00273193 /* STGPUImgFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGPUImgFilter.h; sourceTree = "<group>"; };
+		9EC06F8A1F162DCA00273193 /* STGPUImgFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGPUImgFilter.m; sourceTree = "<group>"; };
+		BE846A735A80A0AE01FBE47D /* Pods-STCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STCamera/Pods-STCamera.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212020FEEEF2667E3C3670B2 /* libPods-STCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1358902ECA7468A55BBE4968 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E1F20079D4716B523F27CA8 /* libPods-STCamera.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E4889461F1610B600677A29 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				9E48896B1F1610B600677A29 /* STCameraTests */,
 				9E4889761F1610B600677A29 /* STCameraUITests */,
 				9E4889501F1610B600677A29 /* Products */,
+				CDF736CD8A61933753EC4AF7 /* Pods */,
+				1358902ECA7468A55BBE4968 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +132,7 @@
 				9E4889561F1610B600677A29 /* AppDelegate.m */,
 				9E4889581F1610B600677A29 /* ViewController.h */,
 				9E4889591F1610B600677A29 /* ViewController.m */,
+				9EC06F771F16236300273193 /* STCamera */,
 				9E48895B1F1610B600677A29 /* Main.storyboard */,
 				9E48895E1F1610B600677A29 /* Assets.xcassets */,
 				9E4889601F1610B600677A29 /* LaunchScreen.storyboard */,
@@ -140,6 +168,70 @@
 			path = STCameraUITests;
 			sourceTree = "<group>";
 		};
+		9EC06F771F16236300273193 /* STCamera */ = {
+			isa = PBXGroup;
+			children = (
+				9EC06F881F162DCA00273193 /* STGPUImgFilter */,
+				9EC06F7B1F1623F100273193 /* Protocol */,
+				9EC06F7C1F1623F100273193 /* View */,
+				9EC06F7D1F1623F100273193 /* ViewC */,
+			);
+			path = STCamera;
+			sourceTree = "<group>";
+		};
+		9EC06F7B1F1623F100273193 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9EC06F851F1624A000273193 /* STCameraProtocol.h */,
+				9EC06F861F1624A000273193 /* STCameraProtocol.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9EC06F7C1F1623F100273193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EC06F811F16241C00273193 /* STCameraView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EC06F7D1F1623F100273193 /* ViewC */ = {
+			isa = PBXGroup;
+			children = (
+				9EC06F7E1F1623F100273193 /* STCameraC.h */,
+				9EC06F7F1F1623F100273193 /* STCameraC.m */,
+			);
+			path = ViewC;
+			sourceTree = "<group>";
+		};
+		9EC06F811F16241C00273193 /* STCameraView */ = {
+			isa = PBXGroup;
+			children = (
+				9EC06F821F16242C00273193 /* STCameraView.h */,
+				9EC06F831F16242C00273193 /* STCameraView.m */,
+			);
+			path = STCameraView;
+			sourceTree = "<group>";
+		};
+		9EC06F881F162DCA00273193 /* STGPUImgFilter */ = {
+			isa = PBXGroup;
+			children = (
+				9EC06F891F162DCA00273193 /* STGPUImgFilter.h */,
+				9EC06F8A1F162DCA00273193 /* STGPUImgFilter.m */,
+			);
+			path = STGPUImgFilter;
+			sourceTree = "<group>";
+		};
+		CDF736CD8A61933753EC4AF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE846A735A80A0AE01FBE47D /* Pods-STCamera.debug.xcconfig */,
+				4841D3CDD7B7D18CD804B5E7 /* Pods-STCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E48897C1F1610B600677A29 /* Build configuration list for PBXNativeTarget "STCamera" */;
 			buildPhases = (
+				C2EFEEA0314BF5CD0B1AAF3D /* [CP] Check Pods Manifest.lock */,
 				9E48894B1F1610B600677A29 /* Sources */,
 				9E48894C1F1610B600677A29 /* Frameworks */,
 				9E48894D1F1610B600677A29 /* Resources */,
+				0AB92D2821C3671BA9592946 /* [CP] Embed Pods Frameworks */,
+				5FF8D674731F5E5013DE97AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,13 +366,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AB92D2821C3671BA9592946 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STCamera/Pods-STCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FF8D674731F5E5013DE97AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STCamera/Pods-STCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2EFEEA0314BF5CD0B1AAF3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E48894B1F1610B600677A29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC06F841F16242C00273193 /* STCameraView.m in Sources */,
+				9EC06F871F1624A000273193 /* STCameraProtocol.m in Sources */,
 				9E48895A1F1610B600677A29 /* ViewController.m in Sources */,
+				9EC06F801F1623F100273193 /* STCameraC.m in Sources */,
 				9E4889571F1610B600677A29 /* AppDelegate.m in Sources */,
+				9EC06F8B1F162DCA00273193 /* STGPUImgFilter.m in Sources */,
 				9E4889541F1610B600677A29 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +572,7 @@
 		};
 		9E48897D1F1610B600677A29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE846A735A80A0AE01FBE47D /* Pods-STCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BKME25WU4F;
@@ -437,6 +585,7 @@
 		};
 		9E48897E1F1610B600677A29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4841D3CDD7B7D18CD804B5E7 /* Pods-STCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BKME25WU4F;
@@ -516,6 +665,7 @@
 				9E48897E1F1610B600677A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E48897F1F1610B600677A29 /* Build configuration list for PBXNativeTarget "STCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +674,7 @@
 				9E4889811F1610B600677A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E4889821F1610B600677A29 /* Build configuration list for PBXNativeTarget "STCameraUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +683,7 @@
 				9E4889841F1610B600677A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
