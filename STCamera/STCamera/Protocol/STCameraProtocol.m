@@ -28,9 +28,20 @@
 /**
  界面btn事件
  tag= 除了导航左右1和2，其余5起步
+ tag = 5 开始录制按钮
  */
 - (void)show_btnClick:(UIButton *)sender{
-    
+    if (sender.tag == 5) {
+      unlink([self.stCameraView.moviePathStr UTF8String]);              //操作权限
+     [self.stCameraView.stGPUImgFilter addTarget:self.stCameraView.imgMovieWriter];
+     [[self.stCameraView imgMovieWriter] startRecording];
+        
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)),
+                       dispatch_get_main_queue(), ^{
+                           
+                });
+    }
 }
 
 @end

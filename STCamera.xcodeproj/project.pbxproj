@@ -20,6 +20,9 @@
 		9EC06F841F16242C00273193 /* STCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC06F831F16242C00273193 /* STCameraView.m */; };
 		9EC06F871F1624A000273193 /* STCameraProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC06F861F1624A000273193 /* STCameraProtocol.m */; };
 		9EC06F8B1F162DCA00273193 /* STGPUImgFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC06F8A1F162DCA00273193 /* STGPUImgFilter.m */; };
+		A9EC1DB21F1DA54F00DD38E4 /* STCBottomFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EC1DAE1F1DA54F00DD38E4 /* STCBottomFunctionView.m */; };
+		A9EC1DB31F1DA54F00DD38E4 /* STCTopFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EC1DB11F1DA54F00DD38E4 /* STCTopFunctionView.m */; };
+		A9EC1DB61F1DA55B00DD38E4 /* STCProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EC1DB51F1DA55B00DD38E4 /* STCProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,12 @@
 		9EC06F861F1624A000273193 /* STCameraProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCameraProtocol.m; sourceTree = "<group>"; };
 		9EC06F891F162DCA00273193 /* STGPUImgFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGPUImgFilter.h; sourceTree = "<group>"; };
 		9EC06F8A1F162DCA00273193 /* STGPUImgFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGPUImgFilter.m; sourceTree = "<group>"; };
+		A9EC1DAD1F1DA54F00DD38E4 /* STCBottomFunctionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCBottomFunctionView.h; sourceTree = "<group>"; };
+		A9EC1DAE1F1DA54F00DD38E4 /* STCBottomFunctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCBottomFunctionView.m; sourceTree = "<group>"; };
+		A9EC1DB01F1DA54F00DD38E4 /* STCTopFunctionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCTopFunctionView.h; sourceTree = "<group>"; };
+		A9EC1DB11F1DA54F00DD38E4 /* STCTopFunctionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCTopFunctionView.m; sourceTree = "<group>"; };
+		A9EC1DB41F1DA55B00DD38E4 /* STCProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCProgressView.h; sourceTree = "<group>"; };
+		A9EC1DB51F1DA55B00DD38E4 /* STCProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCProgressView.m; sourceTree = "<group>"; };
 		BE846A735A80A0AE01FBE47D /* Pods-STCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STCamera/Pods-STCamera.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +217,9 @@
 		9EC06F811F16241C00273193 /* STCameraView */ = {
 			isa = PBXGroup;
 			children = (
+				A9EC1DAB1F1DA54F00DD38E4 /* STCProgressView */,
+				A9EC1DAC1F1DA54F00DD38E4 /* STCBottomFunctionView */,
+				A9EC1DAF1F1DA54F00DD38E4 /* STCTopFunctionView */,
 				9EC06F821F16242C00273193 /* STCameraView.h */,
 				9EC06F831F16242C00273193 /* STCameraView.m */,
 			);
@@ -221,6 +233,33 @@
 				9EC06F8A1F162DCA00273193 /* STGPUImgFilter.m */,
 			);
 			path = STGPUImgFilter;
+			sourceTree = "<group>";
+		};
+		A9EC1DAB1F1DA54F00DD38E4 /* STCProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC1DB41F1DA55B00DD38E4 /* STCProgressView.h */,
+				A9EC1DB51F1DA55B00DD38E4 /* STCProgressView.m */,
+			);
+			path = STCProgressView;
+			sourceTree = "<group>";
+		};
+		A9EC1DAC1F1DA54F00DD38E4 /* STCBottomFunctionView */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC1DAD1F1DA54F00DD38E4 /* STCBottomFunctionView.h */,
+				A9EC1DAE1F1DA54F00DD38E4 /* STCBottomFunctionView.m */,
+			);
+			path = STCBottomFunctionView;
+			sourceTree = "<group>";
+		};
+		A9EC1DAF1F1DA54F00DD38E4 /* STCTopFunctionView */ = {
+			isa = PBXGroup;
+			children = (
+				A9EC1DB01F1DA54F00DD38E4 /* STCTopFunctionView.h */,
+				A9EC1DB11F1DA54F00DD38E4 /* STCTopFunctionView.m */,
+			);
+			path = STCTopFunctionView;
 			sourceTree = "<group>";
 		};
 		CDF736CD8A61933753EC4AF7 /* Pods */ = {
@@ -419,8 +458,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EC1DB31F1DA54F00DD38E4 /* STCTopFunctionView.m in Sources */,
 				9EC06F841F16242C00273193 /* STCameraView.m in Sources */,
+				A9EC1DB61F1DA55B00DD38E4 /* STCProgressView.m in Sources */,
 				9EC06F871F1624A000273193 /* STCameraProtocol.m in Sources */,
+				A9EC1DB21F1DA54F00DD38E4 /* STCBottomFunctionView.m in Sources */,
 				9E48895A1F1610B600677A29 /* ViewController.m in Sources */,
 				9EC06F801F1623F100273193 /* STCameraC.m in Sources */,
 				9E4889571F1610B600677A29 /* AppDelegate.m in Sources */,

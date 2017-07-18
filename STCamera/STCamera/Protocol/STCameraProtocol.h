@@ -8,13 +8,11 @@
 
 #import <Foundation/Foundation.h>
 @class STCameraView;
-@class STCameraC;
 @protocol STCameraProtocolDelegate <NSObject>
 @optional
 @end
 @interface STCameraProtocol : NSObject
-@property (nonatomic, strong) STCameraC                    *stCameraC;
 @property (nonatomic, strong) STCameraView                 *stCameraView;
 @property (nonatomic, weak  ) id<STCameraProtocolDelegate> stCameraProtocolDelegate;
-@property (nonatomic, assign) SEL btnSelector;
+@property (nonatomic, assign) SEL                          btnSelector;
 @end
