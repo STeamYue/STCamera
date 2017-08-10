@@ -9,6 +9,8 @@
 #import "STCameraView.h"
 #import "STCameraC.h"
 #import "STCameraProtocol.h"
+#define kCameraWidth  540
+#define kCameraHeight 960
 @implementation STCameraView
 #pragma -protocol
 /**
@@ -64,6 +66,11 @@
     [[self gpuImgView] mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.showView);
     }];
+    //配置 tag = 5 录制按钮事件
+    self.bottomFunctionView.takeControlBtn.tag = 5;
+    [self.bottomFunctionView.takeControlBtn addTarget:[self protocol]
+                                               action:[self protocol].btnSelector
+                                     forControlEvents:UIControlEventTouchUpInside];
 }
 #pragma - topFunctionView 上半部功能View
 - (STCTopFunctionView *)topFunctionView{
@@ -158,7 +165,41 @@
     }
     return _gpuImgView;
 }
+#pragma - imgMovieWriter （Getter）
 
+- (GPUImageMovieWriter *)imgMovieWriter{
+    if (!_imgMovieWriter)
+    {
+        _imgMovieWriter = [[GPUImageMovieWriter alloc] initWithMovieURL:[NSURL fileURLWithPath:[self moviePathStr]]
+                                                                   size:CGSizeMake(kCameraWidth, kCameraHeight)
+                                                               fileType:AVFileTypeQuickTimeMovie
+                                                         outputSettings:[self videoSettingsMDic]];
+    }
+    return _imgMovieWriter;
+}
+#pragma videoSettingsMDic
+- (NSMutableDictionary *)videoSettingsMDic {
+    if (!_videoSettingsMDic) {
+        _videoSettingsMDic = [[NSMutableDictionary alloc] init];
+        [_videoSettingsMDic setObject:AVVideoCodecH264
+                               forKey:AVVideoCodecKey];
+        [_videoSettingsMDic setObject:[NSNumber numberWithInteger:kCameraWidth]
+                               forKey:AVVideoWidthKey];
+        [_videoSettingsMDic setObject:[NSNumber numberWithInteger:kCameraHeight]
+                               forKey:AVVideoHeightKey];
+    }
+    return _videoSettingsMDic;
+}
+/*---------------------- Layer ------------------------------*/
+- (AVPlayerLayer *)avPlayerLayer{
+    if (!_avPlayerLayer) {
+        _avPlayerLayer = [[AVPlayerLayer alloc]init];
+        [[self showView].layer insertSublayer:_avPlayerLayer
+                                        above:self.showView.layer];
+        _avPlayerLayer.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.width*9/16);
+    }
+    return _avPlayerLayer;
+}
 /*---------------------- other ------------------------------*/
 - (NSString *)moviePathStr{
     if (!_moviePathStr) {

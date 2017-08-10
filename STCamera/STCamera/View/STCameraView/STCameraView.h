@@ -26,14 +26,15 @@
 @property (nonatomic, strong) UIView                *showView;             //视频展示 类似相框。预留，扩展
 @property (nonatomic, strong) STCBottomFunctionView *bottomFunctionView;   //下半部功能View
 
-
 /*---------------------- Layer ---------------------------------*/
+@property (nonatomic, strong) AVPlayerLayer         *avPlayerLayer;        //视频播放层
 
 /*---------------------- GPUImage ------------------------------*/
 @property (nonatomic, strong) GPUImageView        *gpuImgView;
 @property (nonatomic, strong) GPUImageMovieWriter *imgMovieWriter;    //写入临时文件
 @property (nonatomic, strong) GPUImageStillCamera *imgStillCamera;
 @property (nonatomic, strong) STGPUImgFilter      *stGPUImgFilter;
+@property (nonatomic, strong) NSMutableDictionary *videoSettingsMDic;
 
 /*---------------------- other ------------------------------*/
 @property (nonatomic, strong) NSString            *moviePathStr;
